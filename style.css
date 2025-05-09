@@ -1,0 +1,78 @@
+.main-pic-div {
+    width: 100%;
+    height: 270px;
+    background-color: rgb(192, 192, 192);
+}
+
+.main-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.students-logo-container {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 5;
+    /* Hide scrollbar */
+    scrollbar-width: none;          /* Firefox */
+    -ms-overflow-style: none;       /* IE and Edge */
+}
+
+.students-logo-container::-webkit-scrollbar {
+    display: none;                  /* Chrome, Safari */
+}
+
+.student-logo-div {
+    width: 200px;
+    height: 100px;
+    /* background-color: red; */
+}
+
+.student-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0px 50px;
+    border-radius: 100px;
+    border: 5px solid white;
+}
+
+.social-link-div {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.student-logo-div:hover .social-link-div,
+.social-link-div:hover,
+.student-name:hover {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.student-logo-div:hover .student-name {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-link-li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.team-project-container {
+    position: relative;
+    top: -170px;
+}
